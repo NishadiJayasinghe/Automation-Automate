@@ -1,0 +1,7 @@
+PageOperations\HomepageOperation.class
+PageOperations\LoginPageOperations.class
+PageElements\HomePage.class
+PageTestCases\LoginPage_TestCases.class
+PageTestCases\HomePageTestCases.class
+Base\Base.class
+PageElements\LoginPage.class
