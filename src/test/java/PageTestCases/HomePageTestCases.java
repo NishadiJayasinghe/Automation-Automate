@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import PageOperations.HomepageOperation;
 
-public class HomePageTestCases extends HomepageOperation{
+public class HomePageTestCases  {
   @Test
   public void HomePage_TestCases() throws Exception {
 	  

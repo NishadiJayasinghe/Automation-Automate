@@ -4,6 +4,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 public class Base {
 	
@@ -24,6 +35,61 @@ public class Base {
 		  
 		  return driver;
 	  }
+	
+	
+	
+	
+	
+	static ExtentHtmlReporter htmlReporter;
+	public static ExtentReports extent;
+	public static ExtentTest test;
+	public static ExtentTest parentTest;
+	public static ExtentTest childTest;
+    public static ITestResult result;
+	   
+	@BeforeTest
+	public void startReport() {
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") +"/extentReport/ExtentReport.html");
+		extent = new ExtentReports();
+		extent.attachReporter(htmlReporter);
+		
+		extent.setSystemInfo("Host Name", "SoftwareTestingMaterial");
+		extent.setSystemInfo("Environment", "Automation Testing");
+		extent.setSystemInfo("User Name","Nishadi");
+		//extent.loadConfig(new File(System.getProperty("user.dir" + "\\extent-config.xml")));
+		
+	}
+	
+	
+	
+	@AfterMethod
+	public void getResult(ITestResult result) {
+		
+		if(result.getStatus() == ITestResult.FAILURE)
+        {
+            childTest.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
+            childTest.fail(result.getThrowable());
+        }
+		else if(result.getStatus() == ITestResult.SUCCESS)
+        {
+            childTest.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+        }
+		
+		else {
+            childTest.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
+            childTest.skip(result.getThrowable());
+        }
+	}
+	
+	@AfterTest
+	public void endReport() {
+		
+		extent.flush();
+		String path = "C:\\Users\\KOKU-NIPUNI\\eclipse-workspace\\Automate\\extentReport\\ExtentReport.html";
+		System.out.println("ExtentTest Report : " + path);
+		
+	}
+
 	  
 	/*
 	public static void CaptureScreenshot(WebDriver driver, String screenshotname) {
