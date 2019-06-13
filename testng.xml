@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes >
-    <!-- <class name="PageTestCases.ExtentReportsClass"/> -->
+    
     <class name="PageTestCases.LoginPage_TestCases"/>
      <class name="PageTestCases.HomePageTestCases"/>
       

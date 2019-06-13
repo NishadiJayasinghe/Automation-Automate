@@ -6,11 +6,14 @@
       <class name="PageTestCases.HomePageTestCases">
         <methods>
           <include name="HomePage_TestCases"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- PageTestCases.HomePageTestCases -->
       <class name="PageTestCases.LoginPage_TestCases">
         <methods>
-          <include name="LoginPageTestCases"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- PageTestCases.LoginPage_TestCases -->
     </classes>
