@@ -11,8 +11,9 @@ public static void LaunchBrowser() {
 	}
   
 	public static void typeEmail() {
-		
+		if element is exist
 		LoginPage.email().sendKeys("jayasingheane@gmail.com");
+		extent.log();
 	}
 	
 	public static void typePassword() {
