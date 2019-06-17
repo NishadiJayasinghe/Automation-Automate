@@ -7,13 +7,13 @@ import Base.Base;
 public class LoginPage extends Base{
 public static WebElement email() {
 		
-		WebElement email = getDriver().findElement(By.xpath("//input[@id=\"email\"]"));
+		WebElement email = getDriver().findElement(By.xpath("//*[@id=\"email\"]"));
 		return email;
 	}
 	
 	public static WebElement password() {
 		
-		WebElement password = getDriver().findElement(By.xpath("//input[@id=\"password\"]"));
+		WebElement password = getDriver().findElement(By.xpath("//*[@id=\"password\"]"));
 		return password;
 	}
 

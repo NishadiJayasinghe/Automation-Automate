@@ -1,58 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26749" started-at="2019-06-13T16:10:56Z" finished-at="2019-06-13T16:11:23Z">
+  <suite name="Default suite" duration-ms="13534" started-at="2019-06-17T05:44:49Z" finished-at="2019-06-17T05:45:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26749" started-at="2019-06-13T16:10:56Z" finished-at="2019-06-13T16:11:23Z">
-      <class name="PageTestCases.HomePageTestCases">
-        <test-method status="FAIL" signature="HomePage_TestCases()[pri:0, instance:PageTestCases.HomePageTestCases@e580929]" name="HomePage_TestCases" duration-ms="10219" started-at="2019-06-13T21:41:12Z" finished-at="2019-06-13T21:41:22Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="Default test" duration-ms="13534" started-at="2019-06-17T05:44:49Z" finished-at="2019-06-17T05:45:02Z">
+      <class name="PageTestCases.LoginPage_TestCases">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="startReport" is-config="true" duration-ms="387" started-at="2019-06-17T11:14:49Z" finished-at="2019-06-17T11:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="FAIL" signature="LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="LoginPageTestCases" duration-ms="12501" started-at="2019-06-17T11:14:49Z" finished-at="2019-06-17T11:15:02Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="navbar-brand-centered"]/ul/li[1]/ul/li[8]/a/k"}
-  (Session info: chrome=75.0.3770.80)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-DVEOUHU', ip: '192.168.8.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\KOKU-N~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54283}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
-Session ID: 2219dd06e394b274398d63dc1827edd7
-*** Element info: {Using=xpath, value=//*[@id="navbar-brand-centered"]/ul/li[1]/ul/li[8]/a/k}]]>
+              <![CDATA[expected [Insurance Broker System - Login] but found [Insurance Broker System]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="navbar-brand-centered"]/ul/li[1]/ul/li[8]/a/k"}
-  (Session info: chrome=75.0.3770.80)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-DVEOUHU', ip: '192.168.8.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\KOKU-N~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54283}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 75.0.3770.80, webStorageEnabled: true}
-Session ID: 2219dd06e394b274398d63dc1827edd7
-*** Element info: {Using=xpath, value=//*[@id="navbar-brand-centered"]/ul/li[1]/ul/li[8]/a/k}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at PageElements.HomePage.yahoo(HomePage.java:17)
-	at PageOperations.HomepageOperation.clickOnYahoo(HomepageOperation.java:18)
-	at PageTestCases.HomePageTestCases.HomePage_TestCases(HomePageTestCases.java:19)
+              <![CDATA[java.lang.AssertionError: expected [Insurance Broker System - Login] but found [Insurance Broker System]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at PageOperations.LoginPageOperations.compareTitle(LoginPageOperations.java:94)
+	at PageTestCases.LoginPage_TestCases.LoginPageTestCases(LoginPage_TestCases.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,47 +51,26 @@ Session ID: 2219dd06e394b274398d63dc1827edd7
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- HomePage_TestCases -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.HomePageTestCases@e580929]" name="getResult" is-config="true" duration-ms="5" started-at="2019-06-13T21:41:22Z" finished-at="2019-06-13T21:41:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=HomePage_TestCases status=FAILURE method=HomePageTestCases.HomePage_TestCases()[pri:0, instance:PageTestCases.HomePageTestCases@e580929] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-      </class> <!-- PageTestCases.HomePageTestCases -->
-      <class name="PageTestCases.LoginPage_TestCases">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@7dc36524]" name="startReport" is-config="true" duration-ms="271" started-at="2019-06-13T21:40:56Z" finished-at="2019-06-13T21:40:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@7dc36524]" name="LoginPageTestCases" duration-ms="15837" started-at="2019-06-13T21:40:56Z" finished-at="2019-06-13T21:41:12Z">
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageTestCases -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.LoginPage_TestCases@7dc36524]" name="getResult" is-config="true" duration-ms="5" started-at="2019-06-13T21:41:12Z" finished-at="2019-06-13T21:41:12Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="getResult" is-config="true" duration-ms="6" started-at="2019-06-17T11:15:02Z" finished-at="2019-06-17T11:15:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginPageTestCases status=SUCCESS method=LoginPage_TestCases.LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@7dc36524] output={null}]]]>
+                <![CDATA[[TestResult name=LoginPageTestCases status=FAILURE method=LoginPage_TestCases.LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@7dc36524]" name="endReport" is-config="true" duration-ms="388" started-at="2019-06-13T21:41:22Z" finished-at="2019-06-13T21:41:23Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="endReport" is-config="true" duration-ms="618" started-at="2019-06-17T11:15:02Z" finished-at="2019-06-17T11:15:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- PageTestCases.LoginPage_TestCases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

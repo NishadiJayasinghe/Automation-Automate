@@ -67,17 +67,17 @@ public class Base {
 		
 		if(result.getStatus() == ITestResult.FAILURE)
         {
-            childTest.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
-            childTest.fail(result.getThrowable());
+			parentTest.log(Status.FAIL, MarkupHelper.createLabel(result.getName()+" Test case FAILED due to below issues:", ExtentColor.RED));
+			parentTest.fail(result.getThrowable());
         }
 		else if(result.getStatus() == ITestResult.SUCCESS)
         {
-            childTest.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
+			parentTest.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
         }
 		
 		else {
-            childTest.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
-            childTest.skip(result.getThrowable());
+			parentTest.log(Status.SKIP, MarkupHelper.createLabel(result.getName()+" Test Case SKIPPED", ExtentColor.ORANGE));
+			parentTest.skip(result.getThrowable());
         }
 	}
 	

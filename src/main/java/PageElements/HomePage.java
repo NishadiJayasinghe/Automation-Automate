@@ -14,7 +14,7 @@ public static WebElement  selenium() {
 	
 	public static WebElement  yahoo() {
 		
-		WebElement yahoo = getDriver().findElement(By.xpath("//*[@id=\"navbar-brand-centered\"]/ul/li[1]/ul/li[8]/a/k"));
+		WebElement yahoo = getDriver().findElement(By.xpath("//*[@id=\"navbar-brand-centered\"]/ul/li[1]/ul/li[8]/a"));
 		return yahoo;
 	}
 }
