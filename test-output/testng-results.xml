@@ -1,29 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13534" started-at="2019-06-17T05:44:49Z" finished-at="2019-06-17T05:45:02Z">
+  <suite name="Suite" duration-ms="52332" started-at="2019-06-18T05:45:32Z" finished-at="2019-06-18T05:46:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13534" started-at="2019-06-17T05:44:49Z" finished-at="2019-06-17T05:45:02Z">
+    <test name="Test" duration-ms="52332" started-at="2019-06-18T05:45:32Z" finished-at="2019-06-18T05:46:24Z">
+      <class name="PageTestCases.HomePageTestCases">
+        <test-method status="PASS" signature="HomePage_TestCases()[pri:0, instance:PageTestCases.HomePageTestCases@1d251891]" name="HomePage_TestCases" duration-ms="8623" started-at="2019-06-18T11:16:14Z" finished-at="2019-06-18T11:16:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePage_TestCases -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.HomePageTestCases@1d251891]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-18T11:16:23Z" finished-at="2019-06-18T11:16:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HomePage_TestCases status=SUCCESS method=HomePageTestCases.HomePage_TestCases()[pri:0, instance:PageTestCases.HomePageTestCases@1d251891] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- PageTestCases.HomePageTestCases -->
       <class name="PageTestCases.LoginPage_TestCases">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="startReport" is-config="true" duration-ms="387" started-at="2019-06-17T11:14:49Z" finished-at="2019-06-17T11:14:49Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="startReport" is-config="true" duration-ms="2263" started-at="2019-06-18T11:15:32Z" finished-at="2019-06-18T11:15:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="FAIL" signature="LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="LoginPageTestCases" duration-ms="12501" started-at="2019-06-17T11:14:49Z" finished-at="2019-06-17T11:15:02Z">
+        <test-method status="FAIL" signature="LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="LoginPageTestCases" duration-ms="39689" started-at="2019-06-18T11:15:34Z" finished-at="2019-06-18T11:16:14Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Insurance Broker System - Login] but found [Insurance Broker System]]]>
+              <![CDATA[expected [Insurance Broker System] but found [Insurance Broker System - Login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Insurance Broker System - Login] but found [Insurance Broker System]
+              <![CDATA[java.lang.AssertionError: expected [Insurance Broker System] but found [Insurance Broker System - Login]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
-	at PageOperations.LoginPageOperations.compareTitle(LoginPageOperations.java:94)
+	at PageOperations.LoginPageOperations.compareTitle(LoginPageOperations.java:100)
 	at PageTestCases.LoginPage_TestCases.LoginPageTestCases(LoginPage_TestCases.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -55,22 +72,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageTestCases -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="getResult" is-config="true" duration-ms="6" started-at="2019-06-17T11:15:02Z" finished-at="2019-06-17T11:15:02Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="getResult" is-config="true" duration-ms="19" started-at="2019-06-18T11:16:14Z" finished-at="2019-06-18T11:16:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginPageTestCases status=FAILURE method=LoginPage_TestCases.LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658] output={null}]]]>
+                <![CDATA[[TestResult name=LoginPageTestCases status=FAILURE method=LoginPage_TestCases.LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@288a4658]" name="endReport" is-config="true" duration-ms="618" started-at="2019-06-17T11:15:02Z" finished-at="2019-06-17T11:15:02Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="endReport" is-config="true" duration-ms="1629" started-at="2019-06-18T11:16:23Z" finished-at="2019-06-18T11:16:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- PageTestCases.LoginPage_TestCases -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

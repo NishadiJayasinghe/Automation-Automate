@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import Base.Base;
 
 public class LoginPage extends Base{
+	
 public static WebElement email() {
 		
-		WebElement email = getDriver().findElement(By.xpath("//*[@id=\"email\"]"));
+		WebElement email = getDriver().findElement(By.xpath("//*[@id=\"emails\"]"));
 		return email;
 	}
 	

@@ -3,6 +3,7 @@ package Base;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -16,18 +17,19 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class Base {
+import DataProvider.ConfigPropertyFileReader;
+
+public class Base extends ConfigPropertyFileReader {
 	
 	public static WebDriver driver;
-	public static String baseURL = "http://demo.guru99.com/insurance/v1/index.php";
 	
 	public static void openURL() {
 		
-		System.getProperty("wbdriver.chrome.driver","E:\\software\\chromedriver_win32\\chromedriver.exe\\");
+		System.getProperty(getPropertyValue("webDriver"));
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get(getPropertyValue("baseURL"));
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 	}
 	
@@ -36,6 +38,15 @@ public class Base {
 		  return driver;
 	  }
 	
+	
+	public static void type(WebElement element, String value) {
+		element.sendKeys(value);
+	}
+	
+	
+	public static void click(WebElement element) {
+		element.click();
+	}
 	
 	
 	

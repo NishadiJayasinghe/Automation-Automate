@@ -1,5 +1,6 @@
 package PageOperations;
 
+import org.openqa.selenium.NoSuchContextException;
 import org.testng.Assert;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
@@ -12,7 +13,7 @@ public class LoginPageOperations extends Base{
 	
 	public static void LaunchBrowser() {
 		
-		 childTest = parentTest.createNode("Login Test Case childNode - launching browser Step");
+		 childTest = parentTest.createNode("Login Test Cases - launching browser Step");
 		 childTest.info("typeEmail");
 		try {
 				openURL();
@@ -20,85 +21,95 @@ public class LoginPageOperations extends Base{
 					
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			childTest.log(Status.FAIL, MarkupHelper.createLabel("error in launching browser", ExtentColor.RED));       
-			
 			e.printStackTrace();
+			childTest.log(Status.FAIL, MarkupHelper.createLabel("error in launching browser  "+ e, ExtentColor.RED));  
+			
+			
+			
 		}
 		
 		
 	}
   
 	public static void typeEmail() {
-		 childTest = parentTest.createNode("Login Test Case childNode - typeEmail Step");
+		 childTest = parentTest.createNode("Login Test Cases - typeEmail Step");
 		 childTest.info("typeEmail");
 		try {
 			if (LoginPage.email().isDisplayed()) {
-			LoginPage.email().sendKeys("jayasingheane@gmail.com");
+				type(LoginPage.email(), getPropertyValue("email"));
 			childTest.log(Status.PASS, MarkupHelper.createLabel("email is typed", ExtentColor.GREEN));
 			}
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			childTest.log(Status.FAIL, MarkupHelper.createLabel("email element is not recognized", ExtentColor.RED));       
-			
 			e.printStackTrace();
+			childTest.log(Status.FAIL, MarkupHelper.createLabel("email element is not recognized  "+"\n" + e, ExtentColor.RED));       
+			
+			
 		}
 	}
 	
 	public static void typePassword() { 
 		
-		 childTest = parentTest.createNode("Login Test Case childNode - typePassword Step");
+		 childTest = parentTest.createNode("Login Test Cases - typePassword Step");
 		 childTest.info("typePassword");
 		 
 		 try {
 			 if (LoginPage.password().isDisplayed()) {
-					LoginPage.email().sendKeys("123456789");
+					type(LoginPage.password(), getPropertyValue("password"));
 					childTest.log(Status.PASS, MarkupHelper.createLabel("password is typed", ExtentColor.GREEN));
 			 }
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
-				childTest.log(Status.FAIL, MarkupHelper.createLabel("password element is not recognized", ExtentColor.RED));
-				
 				e.printStackTrace();
+				childTest.log(Status.FAIL, MarkupHelper.createLabel("password element is not recognized  "+ e, ExtentColor.RED));
+				
+				
 			}
 				
 	}
 	
 	public static void clickOnLoginButton() {
 		
-		 childTest = parentTest.createNode("Login Test Case childNode - clickOnLoginButton Step");
+		 childTest = parentTest.createNode("Login Test Cases - clickOnLoginButton Step");
 		 childTest.info("click On Login Button");
 		 
 		 try {
 			 if (LoginPage.login().isDisplayed()) {
-				 LoginPage.login().click();
+				 click(LoginPage.login());
 					childTest.log(Status.PASS, MarkupHelper.createLabel("clicked On Login Button", ExtentColor.GREEN));
 			 }
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
-				childTest.log(Status.FAIL, MarkupHelper.createLabel("login  element is not recognized", ExtentColor.RED));
-				
 				e.printStackTrace();
+				childTest.log(Status.FAIL, MarkupHelper.createLabel("login  element is not recognized  " + e, ExtentColor.RED));
+				
+				
 			}
 			
 	}
 	
 	public static void compareTitle() {
 		
-		 childTest = parentTest.createNode("Login Test Case childNode - compareTitle Step");
+		 childTest = parentTest.createNode("Login Test Cases - compareTitle Step");
 		 childTest.info("Compare Title on home page");
 		 
 		 try {
-				 Assert.assertEquals("Insurance Broker System", getDriver().getTitle());
+				 Assert.assertEquals(getDriver().getTitle(),getPropertyValue("expectedTitle1" ));
 				 childTest.log(Status.PASS, MarkupHelper.createLabel("home page title compared correctly", ExtentColor.GREEN));
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
+			  //e.printStackTrace();
+			//childTest.log(Status.FAIL, MarkupHelper.createLabel("home page title doesn't compared correctly  "+"\n" + e, ExtentColor.RED));
 				childTest.log(Status.FAIL, MarkupHelper.createLabel("home page title doesn't compared correctly", ExtentColor.RED));
+				//System.out.println(e); 
+				//System.out.println(e.toString());
+				//System.out.println(e.getMessage());
 				
-				e.printStackTrace();
+			
 			}
 		
 		

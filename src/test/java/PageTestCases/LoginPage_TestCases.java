@@ -10,7 +10,7 @@ public class LoginPage_TestCases extends LoginPageOperations{
   @Test
   public void LoginPageTestCases() throws Exception {
 	  
-	  parentTest = extent.createTest("Login Page Test Case_ParentNode");
+	  parentTest = extent.createTest("Login Page Test Cases");
 	  
 		LaunchBrowser();
 		typeEmail();
@@ -19,7 +19,7 @@ public class LoginPage_TestCases extends LoginPageOperations{
 		compareTitle();
 		//captureScreenShot();
 		
-		parentTest.log(Status.INFO, "Login test is passed");
+		//parentTest.log(Status.INFO, "Login test is passed");
 		  
 	}
 }

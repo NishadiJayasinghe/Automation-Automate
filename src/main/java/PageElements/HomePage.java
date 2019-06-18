@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import Base.Base;
 
 public class HomePage extends Base{
+
 public static WebElement  selenium() {
 		
 		WebElement selenium = getDriver().findElement(By.xpath("//*[@id=\"navbar-brand-centered\"]/ul/li[1]/a"));

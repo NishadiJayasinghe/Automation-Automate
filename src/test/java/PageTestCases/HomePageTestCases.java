@@ -10,8 +10,8 @@ public class HomePageTestCases extends HomepageOperation{
 	
   @Test
   public void HomePage_TestCases() throws Exception {
-	  
-	  parentTest = extent.createTest("Home Test Case_ParentNode");
+	   
+	  parentTest = extent.createTest("Home Test Cases");
 	  	  
  	  clickOnSelenium();
 	  clickOnYahoo();
