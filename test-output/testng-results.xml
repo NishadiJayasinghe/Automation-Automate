@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="52332" started-at="2019-06-18T05:45:32Z" finished-at="2019-06-18T05:46:24Z">
+  <suite name="Suite" duration-ms="19988" started-at="2019-06-21T12:31:15Z" finished-at="2019-06-21T12:31:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="52332" started-at="2019-06-18T05:45:32Z" finished-at="2019-06-18T05:46:24Z">
+    <test name="Test" duration-ms="19988" started-at="2019-06-21T12:31:15Z" finished-at="2019-06-21T12:31:35Z">
       <class name="PageTestCases.HomePageTestCases">
-        <test-method status="PASS" signature="HomePage_TestCases()[pri:0, instance:PageTestCases.HomePageTestCases@1d251891]" name="HomePage_TestCases" duration-ms="8623" started-at="2019-06-18T11:16:14Z" finished-at="2019-06-18T11:16:22Z">
+        <test-method status="PASS" signature="HomePage_TestCases()[pri:0, instance:PageTestCases.HomePageTestCases@1d251891]" name="HomePage_TestCases" duration-ms="5707" started-at="2019-06-21T18:01:30Z" finished-at="2019-06-21T18:01:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage_TestCases -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.HomePageTestCases@1d251891]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-18T11:16:23Z" finished-at="2019-06-18T11:16:23Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.HomePageTestCases@1d251891]" name="getResult" is-config="true" duration-ms="0" started-at="2019-06-21T18:01:35Z" finished-at="2019-06-21T18:01:35Z">
           <params>
             <param index="0">
               <value>
@@ -24,11 +24,11 @@
         </test-method> <!-- getResult -->
       </class> <!-- PageTestCases.HomePageTestCases -->
       <class name="PageTestCases.LoginPage_TestCases">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="startReport" is-config="true" duration-ms="2263" started-at="2019-06-18T11:15:32Z" finished-at="2019-06-18T11:15:34Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="startReport" is-config="true" duration-ms="259" started-at="2019-06-21T18:01:15Z" finished-at="2019-06-21T18:01:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="FAIL" signature="LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="LoginPageTestCases" duration-ms="39689" started-at="2019-06-18T11:15:34Z" finished-at="2019-06-18T11:16:14Z">
+        <test-method status="FAIL" signature="LoginPageTestCases()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="LoginPageTestCases" duration-ms="13780" started-at="2019-06-21T18:01:16Z" finished-at="2019-06-21T18:01:30Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Insurance Broker System] but found [Insurance Broker System - Login]]]>
@@ -40,7 +40,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:125)
 	at org.testng.Assert.assertEquals(Assert.java:178)
 	at org.testng.Assert.assertEquals(Assert.java:188)
-	at PageOperations.LoginPageOperations.compareTitle(LoginPageOperations.java:100)
+	at PageOperations.LoginPageOperations.compareTitle(LoginPageOperations.java:99)
 	at PageTestCases.LoginPage_TestCases.LoginPageTestCases(LoginPage_TestCases.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -72,7 +72,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginPageTestCases -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="getResult" is-config="true" duration-ms="19" started-at="2019-06-18T11:16:14Z" finished-at="2019-06-18T11:16:14Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="getResult" is-config="true" duration-ms="7" started-at="2019-06-21T18:01:30Z" finished-at="2019-06-21T18:01:30Z">
           <params>
             <param index="0">
               <value>
@@ -83,7 +83,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="endReport" is-config="true" duration-ms="1629" started-at="2019-06-18T11:16:23Z" finished-at="2019-06-18T11:16:24Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:PageTestCases.LoginPage_TestCases@56cbfb61]" name="endReport" is-config="true" duration-ms="220" started-at="2019-06-21T18:01:35Z" finished-at="2019-06-21T18:01:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

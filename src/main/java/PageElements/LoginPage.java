@@ -8,7 +8,7 @@ public class LoginPage extends Base{
 	
 public static WebElement email() {
 		
-		WebElement email = getDriver().findElement(By.xpath("//*[@id=\"emails\"]"));
+		WebElement email = getDriver().findElement(By.xpath("//*[@id=\"email\"]"));
 		return email;
 	}
 	

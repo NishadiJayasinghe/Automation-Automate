@@ -39,7 +39,7 @@ public class HomepageOperation extends Base{
 	public static void clickOnYahoo() {
 		
 		childTest = parentTest.createNode("Home Test Case - click on yahoo step");
-		childTest.info("click on selenium");
+		childTest.info("click on yahoo");
 		 
 			try {
 				if (HomePage.yahoo().isDisplayed()) {
